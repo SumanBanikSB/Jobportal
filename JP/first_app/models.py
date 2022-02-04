@@ -22,7 +22,7 @@ class Candidates(models.Model):
         ('Other','Other'),
     )
     name = models.CharField(max_length=200, null = True)
-    dob = models.DateField(null = True)
+    dob = models.DateField(null = True,auto_now_add=True)
     gender = models.CharField(max_length = 10, choices=category)
     mobile = models.CharField(max_length=20)
     email = models.EmailField(max_length=50)

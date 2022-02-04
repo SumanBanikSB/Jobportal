@@ -65,4 +65,3 @@ def applyPage(request):
             return redirect('home')
     context = {'form' : form}
     return render(request, 'apply.html',context)
-# Test line
